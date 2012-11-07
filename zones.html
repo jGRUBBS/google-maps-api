@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfAKDdohwzVZFbu5BwUi-bNSqw7M_7nk4&sensor=true"></script>
+		<script type="text/javascript" src="http://geoxml3.googlecode.com/svn/branches/polys/geoxml3.js"></script>
+		<script type="text/javascript" src="js/epolys.js"></script>
+    <script type="text/javascript" src="js/zones.js"></script>
+  </head>
+  <body onload="initialize()">
+		<form action="#" onsubmit="showAddress(this.address.value); return false">
+	  	<input type="text" size="60" name="address" class="address" />
+			<input type="submit" value="search" />
+		</form>
+    <div id="map_canvas" style="width:100%; height:600px"></div>
+  </body>
+</html>
